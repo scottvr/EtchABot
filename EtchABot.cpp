@@ -230,7 +230,7 @@ void EtchABot::drawArc(int xCenter, int yCenter, int nSegs, float degrees) {
 	for (int i = 1; i <= nSegs; i++) {
 		xNext = startX + radius*cos(i*radiansPerSeg);
 		yNext = startY - radius*sin(i*radiansPerSeg);  // subtract b/c positive y is down
-		drawLine(static_cast<int>xNext, static_cast<int>yNext, false);
+		drawLine(static_cast<int>(xNext), static_cast<int>(yNext), false);
 	}
 	// Restore previous backlash settings
 	setHBacklash(hBacklash);
