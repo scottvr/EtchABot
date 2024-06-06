@@ -211,7 +211,6 @@ void EtchABot::drawLine(int targetX, int targetY, boolean motorShutOff) {
 //  segments and subtends angle degrees of arc.  For a complete circle, use
 //  degrees = 360.  You can make the arc run clockwise with degrees > 0
 //  and counterclockwise with degrees < 0.
-/* Not working yet
 void EtchABot::drawArc(int xCenter, int yCenter, int nSegs, float degrees) {
 	const float degToRad = 0.0174533;
 	
@@ -237,7 +236,7 @@ void EtchABot::drawArc(int xCenter, int yCenter, int nSegs, float degrees) {
 	setHBacklash(hBacklash);
 	setVBacklash(vBacklash);	
 }
-*/
+
 void EtchABot::turnOffEraseMotor() {
 	for (int i = 8; i < 12; i++) {
 		digitalWrite(_motorPins[i], LOW);
